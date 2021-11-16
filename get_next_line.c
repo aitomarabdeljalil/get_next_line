@@ -6,14 +6,14 @@
 /*   By: aait-oma <aait-oma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:52:24 by aait-oma          #+#    #+#             */
-/*   Updated: 2021/11/16 23:28:48 by aait-oma         ###   ########.fr       */
+/*   Updated: 2021/11/16 23:52:48 by aait-oma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <sys/types.h>
 #include "get_next_line.h"
 
-static ssize_t ft_n_indexof(char *b, char c, size_t n)
+static ssize_t	ft_n_indexof(char *b, char c, size_t n)
 {
 	size_t	i;
 
@@ -87,9 +87,6 @@ char	*get_next_line(int fd)
 	}
 	return (b);
 }
-
-
-
 // #include <fcntl.h>
 // #include <stdio.h>
 // int main()
@@ -97,10 +94,10 @@ char	*get_next_line(int fd)
 // 	char	*str;
 // 	int		fd;
 // 	int		i;
-	
+//	
 // 	i = 0;
 // 	fd = open("file", O_RDONLY);
-
+//
 // 	while ((str = get_next_line(fd)))
 // 		printf("%s", str);
 // }
