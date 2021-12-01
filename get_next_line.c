@@ -6,7 +6,7 @@
 /*   By: aait-oma <aait-oma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:52:24 by aait-oma          #+#    #+#             */
-/*   Updated: 2021/11/16 23:52:48 by aait-oma         ###   ########.fr       */
+/*   Updated: 2021/12/01 20:58:58 by aait-oma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static ssize_t	ft_n_indexof(char *b, char c, size_t n)
 	}
 	return (-1);
 }
-
+//to .h
 typedef struct s_buffer {
 	char	buffer[BUFFER_SIZE];
 	size_t	len;
@@ -87,17 +87,3 @@ char	*get_next_line(int fd)
 	}
 	return (b);
 }
-// #include <fcntl.h>
-// #include <stdio.h>
-// int main()
-// {
-// 	char	*str;
-// 	int		fd;
-// 	int		i;
-//	
-// 	i = 0;
-// 	fd = open("file", O_RDONLY);
-//
-// 	while ((str = get_next_line(fd)))
-// 		printf("%s", str);
-// }
