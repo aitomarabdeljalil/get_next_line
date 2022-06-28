@@ -6,7 +6,7 @@
 /*   By: aait-oma <aait-oma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:52:24 by aait-oma          #+#    #+#             */
-/*   Updated: 2021/12/01 20:58:58 by aait-oma         ###   ########.fr       */
+/*   Updated: 2021/12/17 11:03:35 by aait-oma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static ssize_t	ft_n_indexof(char *b, char c, size_t n)
 	}
 	return (-1);
 }
-//to .h
+
 typedef struct s_buffer {
 	char	buffer[BUFFER_SIZE];
 	size_t	len;
@@ -75,7 +75,7 @@ char	*get_next_line(int fd)
 		if (b)
 		{
 			tmp = a;
-			a = ft_strjoin(b, a);
+			a = ft_strjoin(b, tmp);
 			free(tmp);
 			free(b);
 		}
